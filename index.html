@@ -2,84 +2,545 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/pet-project-1/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Pet project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     
     <script type="module" crossorigin src="/pet-project-1/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/pet-project-1/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/pet-project-1/assets/index-5eb9b716.css">
   </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
+  <body>
+    <header class="header container">
+  <nav class="header-nav">
+    <a class="header-logo" href="index.html">
+      <svg width="91.78" height="24">
+        <use href="../img/sprite.svg#icon-logo" />
+      </svg>
+    </a>
   </nav>
+  <button class="mobile-menu-button my-button">
+    <svg class="mobile-menu-icon" width="24" height="24">
+      <use href="../img/sprite.svg#icon-menu" />
+    </svg>
+  </button>
 </header>
 
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/pet-project-1/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+    <main>
+      <section class="hero container">
+  <img class="hero-img" src="../img/hero-img.jpg" alt="woman" />
+  <h1 class="hero-title">
+    I help <br />
+    high value <br />
+    woman <br />
+    manifest <br />
+    themselves <br />
+    through style.
+  </h1>
+  <div class="hero-btn-container">
+    <button class="hero-btn" data-modal-open="modal2">BOOK NOW</button>
+  </div>
+</section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
+<!-- Modal Window Book now -->
+
+<div class="backdrop-booknow is-hidden backdrop" data-modal="modal2">
+  <div class="booknow-modal">
+    <div class="modal-container-hero">
+      <button class="modal-close-btn" type="button" data-modal-close="modal2">
+        <svg class="modal-close-icon" width="32" height="32">
+          <use href="../img/sprite.svg#icon-menu-close" />
+        </svg>
+      </button>
+    </div>
+    <div class="form-container hero-modal-form-container">
+      <p class="form-title">
+        To request a discovery call, book a session or get more details, please
+        contact via form bellow
       </p>
+      <form>
+        <label class="form-label" for="user_name">Name</label>
+        <input class="form-input" type="text" name="name" id="user_name" />
+        <label class="form-label" for="user_phone">Phone</label>
+        <input class="form-input" type="tel" name="name" id="user_phone" />
+        <label class="form-label" for="user_email">Email</label>
+        <input class="form-input" type="email" name="name" id="user_email" />
+        <div class="drop-down-list-container">
+          <p class="form-label mrgn">You prefer we contact you via</p>
+          <svg class="icon-down" width="24" height="24">
+            <use href="../img/sprite.svg#icon-down" />
+          </svg>
+        </div>
+        <div class="drop-down-list-container">
+          <p class="form-label mrgn">Services</p>
+          <svg width="24" height="24">
+            <use href="../img/sprite.svg#icon-down" />
+          </svg>
+        </div>
+        <label class="form-label" for="user_comment">Comment</label>
+        <input
+          class="form-input input-comment"
+          type="text"
+          name="comment"
+          id="user_comment"
+        />
+        <p class="form-text">
+          For other inquiries or if preferred please contact directly via email
+          edna@shindinde.com
+        </p>
+        <div class="form-text-last">
+          <p class="form-text">Follow me via</p>
+          <a href="#"
+            ><svg class="icon-instagram" width="16" height="16">
+              <use href="../img/sprite.svg#icon-instagram" />
+            </svg>
+          </a>
+        </div>
+        <button class="form-button" type="submit">SEND A REQUEST</button>
+      </form>
+    </div>
+  </div>
+</div>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+      <section class="about">
+  <img
+    class="about-section-img"
+    src="../img/about/about-img.jpg"
+    alt="profile of a woman"
+  />
+  <div class="about-sub-section-container container">
+    <h2 class="about-title">ABOUT</h2>
+    <div class="about-text-container">
+      <div class="about-text">Welcome,</div>
+      <div class="about-text">
+        I’m Edna Shindinde, personal style advisor & wardrobe editor.
+      </div>
+      <div class="about-text">
+        I help women embrace their value by teaching how to build a staple
+        wardrobe in line with their inner power and beauty.
+      </div>
+      <div class="about-text">
+        The greatest flair of mine is to see talent and strength behind every
+        woman I meet. Whether you build a career, take care of a family, own a
+        business or enjoy life by your rules – you are a high-value woman. You
+        set a precedent & should own it proudly!
+      </div>
+      <div class="about-text reset">
+        My vision is for each women to unblushingly celebrate her beauty, to be
+        seen and respected without doubting own looks. Styling is just one way
+        to achieve that. And I couldn’t ask for a better mission, as to guide
+        you on this journey.
+      </div>
+    </div>
+    <ul class="about-container-link">
+      <li class="about-link-item">
+        <a class="about-link" href="#">SERVICES</a>
+      </li>
+      <li class="about-link-item">
+        <a class="about-link" href="#">TESTIMONIALS</a>
+      </li>
+      <li class="about-link-item"><a class="about-link" href="#">BOOK</a></li>
+    </ul>
+  </div>
+  <div class="about-banner">
+    <h3 class="about-banner-title">
+      You are <br />
+      always <br />
+      enough.
+    </h3>
+    <p class="about-banner-text">
+      Every part of a woman, her every role is equally important and worthy to
+      be seen. Not clothes but you are the starting point of a style to
+      remember. Let’s manifest that.
+    </p>
+  </div>
+</section>
+
+      <section class="my-approach container">
+  <h2 class="approach-title">MY APPROACH</h2>
+  <div class="slider-container">
+    <div class="slider">
+      <ul class="slider-line">
+        <li class="slider-item">
+          <img
+            class="approach-img"
+            src="../img/approach/aproach-1.jpg"
+            alt="profile of a woman"
+          />
+          <h3 class="approach-card-title">
+            I invest TIme to know the woman in front of me.
+          </h3>
+          <p class="approach-text">
+            I am excited to hear about your story and life experiences that made
+            you who you are. Your personality is the foundaHon of a unique style
+            & I’m here to explore it.
+          </p>
+          <!-- <svg class="approach-arrow-icon" width="288" height="16">
+            <use href="../img/sprite.svg#icon-arrow" />
+          </svg> -->
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="slider-item">
+          <img
+            class="approach-img"
+            src="../img/approach/approach-2.jpg"
+            alt="flower"
+          />
+          <h3 class="approach-card-title">Your comfort is a priority.</h3>
+          <p class="approach-text">
+            I mind the relevance of a look to your social and personal
+            lifestyle. We don’t pretend to be comfortable, we live for it.
+          </p>
+          <!-- <svg class="approach-arrow-icon-second-prev" width="40" height="16">
+            <use href="../img/sprite.svg#icon-arrow-back" />
+          </svg> -->
+          <!-- <svg class="approach-arrow-icon-second-next" width="288" height="16">
+            <use href="../img/sprite.svg#icon-arrow" />
+          </svg> -->
+        </li>
+        <li class="slider-item">
+          <img
+            class="approach-img"
+            src="../img/approach/approach-3.jpg"
+            alt="hand in glass of water"
+          />
+          <h3 class="approach-card-title">
+            Strive for a sustainable & mindful wardrobe.
+          </h3>
+          <p class="approach-text">
+            We shop strategically and edit a wardrobe with care – keep what’s
+            dear, yet restyle it to feel modern & serve your current sense of
+            self.
+          </p>
+          <!-- <svg class="approach-arrow-icon" width="40" height="16">
+          <use href="../img/sprite.svg#icon-arrow-back" />
+        </svg> -->
         </li>
       </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/pet-project-1/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="btn-container">
+      <button class="button slide-prev">
+        <svg class="icon-arrow-back" width="40" height="16">
+          <use href="../img/sprite.svg#icon-arrow-back" />
+        </svg>
+      </button>
+      <button class="button slide-next">
+        <svg class="icon-arrow-next" width="40" height="16">
+          <use href="../img/sprite.svg#icon-arrow-next" />
+        </svg>
+      </button>
     </div>
   </div>
 </section>
 
+      <section class="services container">
+  <h2 class="services-title">Services</h2>
+  <div class="swiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <div class="services-img-container">
+          <img
+            class="services-img"
+            src="../img/services/services-1.jpg"
+            alt="package"
+          />
+          <h3 class="services-img-title">Guided Shopping</h3>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="services-img-container">
+          <img
+            class="services-img"
+            src="../img/services/services-2.jpg"
+            alt="woman"
+          />
+          <h3 class="services-img-title">Style Session</h3>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="services-img-container">
+          <img
+            class="services-img"
+            src="../img/services/services-3.jpg"
+            alt="look of the day"
+          />
+          <h3 class="services-img-title">Wardrobe Edit</h3>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="services-img-container">
+          <img
+            class="services-img"
+            src="../img/services/services-4.jpg"
+            alt="laptop"
+          />
+          <h3 class="services-img-title">Special Styling</h3>
+        </div>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
+      <section class="reviews container">
+  <div class="swiper">
+    <ul class="swiper-wrapper swiper-container">
+      <li class="swiper-slide">
+        <div class="reviews-photo-text-container">
+          <img
+            class="reviews-photo"
+            src="../img/reviews/reviews.png"
+            alt="portrait of a woman"
+          />
+          <div>
+            <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+            <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
+          </div>
+        </div>
+
+        <p class="reviews-card-text">
+          During a stage in my life, I needed to transition from my corporate
+          attire during work hours and floral dresses during leisure time...
+        </p>
+        <button class="reviews-card-button" data-modal-open="modal1" href="#">
+          Read more
+        </button>
+      </li>
+      <li class="swiper-slide">
+        <div class="reviews-photo-text-container">
+          <img
+            class="reviews-photo"
+            src="../img/reviews/reviews.png"
+            alt="portrait of a woman"
+          />
+          <div>
+            <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+            <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
+          </div>
+        </div>
+
+        <p class="reviews-card-text">
+          During a stage in my life, I needed to transition from my corporate
+          attire during work hours and floral dresses during leisure time...
+        </p>
+        <a class="reviews-card-link" data-modal-open="modal1" href="#"
+          >Read more</a
+        >
+      </li>
+      <li class="swiper-slide">
+        <div class="reviews-photo-text-container">
+          <img
+            class="reviews-photo"
+            src="../img/reviews/reviews.png"
+            alt="portrait of a woman"
+          />
+          <div>
+            <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+            <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
+          </div>
+        </div>
+
+        <p class="reviews-card-text">
+          During a stage in my life, I needed to transition from my corporate
+          attire during work hours and floral dresses during leisure time...
+        </p>
+        <a class="reviews-card-link" data-modal-open="modal1" href="#"
+          >Read more</a
+        >
+      </li>
+    </ul>
+    <div class="swiper-pagination swiper-nav"></div>
+  </div>
+</section>
+
+      <section class="form">
+  <img class="form-img" src="../img/form/form.jpg" alt="woman" />
+  <div class="form-container">
+    <p class="form-title">
+      To request a discovery call, book a session or get more details, please
+      contact via form bellow
+    </p>
+    <form>
+      <label class="form-label" for="user_name">Name</label>
+      <input class="form-input" type="text" name="name" id="user_name" />
+      <label class="form-label" for="user_phone">Phone</label>
+      <input class="form-input" type="tel" name="name" id="user_phone" />
+      <label class="form-label" for="user_email">Email</label>
+      <input class="form-input" type="email" name="name" id="user_email" />
+      <div class="drop-down-list-container">
+        <p class="form-label mrgn">You prefer we contact you via</p>
+        <svg class="icon-down" width="24" height="24">
+          <use href="../img/sprite.svg#icon-down" />
+        </svg>
+      </div>
+      <div class="drop-down-list-container">
+        <p class="form-label mrgn">Services</p>
+        <svg width="24" height="24">
+          <use href="../img/sprite.svg#icon-down" />
+        </svg>
+      </div>
+      <label class="form-label" for="user_comment">Comment</label>
+      <input
+        class="form-input input-comment"
+        type="text"
+        name="comment"
+        id="user_comment"
+      />
+      <p class="form-text">
+        For other inquiries or if preferred please contact directly via email
+        edna@shindinde.com
+      </p>
+      <div class="form-text-last">
+        <p class="form-text">Follow me via</p>
+        <a href="#"
+          ><svg class="icon-instagram" width="16" height="16">
+            <use href="../img/sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+      </div>
+      <button class="form-button" type="submit">SEND A REQUEST</button>
+    </form>
+  </div>
+</section>
+
+      <section class="blog">
+  <h2 class="blog-title">BLOG</h2>
+
+  <ul class="blog-img-container">
+    <li><img class="blog-img" src="../img/blog/blog-1.jpg" alt="" /></li>
+
+    <li class="blog-item-img">
+      <img class="blog-img" src="../img/blog/blog-2.jpg" alt="" />
+    </li>
+    <li class="blog-item-img">
+      <img class="blog-img" src="../img/blog/blog-3.jpg" alt="" />
+    </li>
+    <li class="blog-item-img">
+      <img class="blog-img" src="../img/blog/blog-4.jpg" alt="" />
+    </li>
+    <li class="blog-item-img">
+      <img class="blog-img" src="../img/blog/blog-5.jpg" alt="" />
+    </li>
+    <li class="blog-item-img">
+      <img class="blog-img" src="../img/blog/blog-6.jpg" alt="" />
+    </li>
+  </ul>
+  <div class="blog-second-container">
+    <h3 class="blog-subtitle">sustainable & mindful wardrobe</h3>
+    <p class="blog-text">
+      Join my community & let’s explore meaningful topics of conscious fashion
+      and styling together.
+    </p>
+    <button class="blog-btn" type="button">EXPLORE MORE</button>
+  </div>
+</section>
+
+    </main>
+    <div class="backdrop is-hidden" data-modal="modal1">
+  <div class="read-more-modal">
+    <button class="modal-close-btn" type="button" data-modal-close="modal1">
+      <svg class="modal-close-icon" width="32" height="32">
+        <use href="../img/sprite.svg#icon-menu-close" />
+      </svg>
+    </button>
+    <div class="reviews-photo-text-container change-margin">
+      <img
+        class="reviews-photo"
+        src="../img/reviews/reviews.png"
+        alt="portrait of a woman"
+        width="56"
+        height="56"
+      />
+      <div>
+        <h3 class="reviews-card-title read-more-title">Nadiya Maltseva</h3>
+        <h4 class="reviews-card-suptitle read-more-suptitle">
+          Maltseva Consulting
+        </h4>
+      </div>
+    </div>
+    <p class="modal-text">
+      During a stage in my life, I needed to transition from my corporate attire
+      during work hours and floral dresses during leisure time, to a more
+      versatile and easy-to-wear style. Edna surprised me by first wanting to
+      understand me as a person, not just my daily role. As we sorted through my
+      closet, I was apprehensive about having to let go of my favorite pieces.
+      However, Edna approached each item with reverence and asked about my
+      personal connection and association with it. In the end, we ended up
+      donating 70% of the items and did a little shopping. Edna goes beyond just
+      putting together an outfit. She taught me to view each item as an
+      ingredient that can be used in various combinations, making them
+      incredibly satisfying and appealing, resulting in compliments from others
+    </p>
+  </div>
+</div>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-help-container">
+    <svg class="footer-text" width="65" height="10">
+      <use class="footer-text-icon" href="../img/sprite.svg#icon-shindinde">
+    </svg>
+    <span class="footer-copyright" >| </span>
+    <span class="footer-copyright">© Copyright 2023</span>
+    </div>
+    <div>
+     <a href="#"
+          ><svg class="icon-instagram-footer" width="16" height="16">
+            <use href="../img/sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+        </div>
+    <!-- <img src="../img/Frame 255.png" alt=""> -->
+  </div>
+</footer>
+
+    <div class="header-menu-container">
+  <header class="header container">
+    <nav class="header-nav">
+      <a class="header-logo" href="index.html">
+        <svg width="91.78" height="24">
+          <use href="../img/sprite.svg#icon-logo" />
+        </svg>
+      </a>
+    </nav>
+    <button class="mobile-menu-button-close close-btn">
+      <svg class="mobile-menu-icon" width="32" height="32">
+        <use href="../img/sprite.svg#icon-menu-close" />
+      </svg>
+    </button>
+  </header>
+  <div class="title-section-container">
+    <a class="title-section-link" href="">ABOUT</a>
+    <a class="title-section-link" href="">APPROACH</a>
+    <a class="title-section-link" href="">SERVICES</a>
+    <a class="title-section-link" href="">TESTIMONIALS</a>
+    <a class="title-section-link" href="">CONTACT</a>
+    <a class="title-section-link" href="">BLOG</a>
+    <a class="title-section-link" href="">FASHION STYLING</a>
+    <a class="title-section-link" href=""
+      ><svg class="title-section-icon-instagram" width="16" height="16">
+        <use href="../img/sprite.svg#icon-instagram" />
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
   </body>
 </html>
