@@ -5,8 +5,17 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./approach.css');
+@import url('./services.css');
+@import url('./reviews.css');
+@import url('./form.css');
+@import url('./blog.css');
+@import url('./footer.css');
+@import url('./header-menu.css');
+@import url('./modal-backdrop.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -14,12 +23,20 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #210803;
+  background-color: #f6f5f1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
 }

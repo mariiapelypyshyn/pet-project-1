@@ -1,0 +1,58 @@
+.header-menu-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #f6f5f1;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-open {
+  transform: translateX(0);
+  /* cursor: none; */
+}
+
+.mobile-menu-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.title-section-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.title-section-link {
+  color: #8f7d65;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.title-section-link:active {
+  color: #b31719;
+}
+
+.title-section-icon-instagram {
+  stroke: #8f7d65;
+}
+
+.title-section-icon-instagram:active {
+  stroke: #b31719;
+}

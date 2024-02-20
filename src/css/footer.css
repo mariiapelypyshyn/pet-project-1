@@ -1,0 +1,31 @@
+.footer {
+  padding: 38px 16px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-instagram-footer {
+  display: block;
+  fill: #b31719;
+}
+
+.footer-copyright {
+  display: block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.footer-text {
+  display: block;
+}
+
+.footer-help-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

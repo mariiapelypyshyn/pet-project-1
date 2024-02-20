@@ -1,8 +1,12 @@
 .header {
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.nav-list {
+/* .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -18,4 +22,29 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+} */
+
+.mobile-menu-icon {
+  /* display: inline-block; */
+
+  stroke: currentColor;
+}
+/* .mobile-menu-button {
+  border: none;
+  padding: 0;
+  margin: 10px; */
+
+.mobile-menu-button {
+  /* min-height: 28px;
+  min-width: 28px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
