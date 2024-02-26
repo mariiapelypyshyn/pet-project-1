@@ -29,6 +29,9 @@
   outline: none;
 }
 
+.mobile-menu-icon-close {
+  stroke: #40382d;
+}
 .title-section-container {
   padding-left: 40px;
   padding-right: 40px;
@@ -45,12 +48,13 @@
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.title-section-link:active {
+.title-section-link:active,
+.title-section-link:visited {
   color: #b31719;
 }
 
 .title-section-icon-instagram {
-  stroke: #8f7d65;
+  fill: #8f7d65;
 }
 
 .title-section-icon-instagram:active {

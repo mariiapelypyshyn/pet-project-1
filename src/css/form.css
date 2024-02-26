@@ -3,6 +3,7 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #40382d;
+  border-radius: 0%;
   background-color: transparent;
   margin-bottom: 16px;
 }
