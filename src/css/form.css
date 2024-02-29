@@ -74,3 +74,41 @@
 .hero-modal-form-container {
   padding-top: 0;
 }
+
+.sent-request-modal {
+  position: absolute;
+  min-width: 320px;
+  height: 680px;
+  overflow-y: auto;
+  background-color: #f6f5f1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sent-request-container {
+  min-width: 320px;
+  height: 482px;
+  padding: 56px 32px 64px 32px;
+}
+
+.modal-send-request-title {
+  margin-top: 107px;
+  margin-bottom: 32px;
+  color: #2d1b0d;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.modal-send-request-text {
+  color: #2d1b0d;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}

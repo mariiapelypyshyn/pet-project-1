@@ -11,7 +11,7 @@
       closeModalBtn: document.querySelector("[data-modal-close='modal2']"),
       modal: document.querySelector("[data-modal='modal2']"),
       bodyElement: document.querySelector("body"),
-    }
+    },
   ];
 
   modalRefs.forEach((modalRef) => {

@@ -33,6 +33,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* :root {
+  --main-color: #7e8fdd;
+  --accent-color: #9cdfdf;
+  --text-color: #242424;
+  --background-color: #f8f9ff;
+  --cards-color: #fdfdff;
+  --dark-cards-color: #232330;
+} */
+
 .container {
   padding-left: 16px;
   padding-right: 16px;

@@ -29,13 +29,33 @@
         To request a discovery call, book a session or get more details, please
         contact via form bellow
       </p>
-      <form>
+      <form class="form-hero">
         <label class="form-label" for="user_name">Name</label>
-        <input class="form-input" type="text" name="name" id="user_name" />
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="user_name"
+          required
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄєґҐ\s-]+"
+          title="Please enter a valid name. Only letters and spaces are allowed."
+        />
         <label class="form-label" for="user_phone">Phone</label>
-        <input class="form-input" type="tel" name="name" id="user_phone" />
+        <input
+          class="form-input"
+          type="tel"
+          name="phone"
+          id="user_phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        />
         <label class="form-label" for="user_email">Email</label>
-        <input class="form-input" type="email" name="name" id="user_email" />
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="user_email"
+          title="Please enter a valid email address"
+        />
         <div class="drop-down-list-container">
           <p class="form-label mrgn">You prefer we contact you via</p>
           <svg class="icon-down" width="24" height="24">
@@ -67,8 +87,38 @@
             </svg>
           </a>
         </div>
-        <button class="form-button" type="submit">SEND A REQUEST</button>
+        <button class="form-button" type="submit" data-modal-open="modal3">
+          SEND A REQUEST
+        </button>
       </form>
+    </div>
+  </div>
+</div>
+
+<!--Modal Window Sent a Request-->
+<div class="is-hidden backdrop" data-modal="modal3">
+  <div class="sent-request-modal">
+    <div class="modal-container-hero">
+      <button class="modal-close-btn" type="button" data-modal-close="modal3">
+        <svg class="modal-close-icon" width="32" height="32">
+          <use href="/img/sprite.svg#icon-menu-close" />
+        </svg>
+      </button>
+    </div>
+    <div class="sent-request-container">
+      <h2 class="modal-send-request-title">Thank you!</h2>
+      <p class="modal-send-request-text">
+        Your request has been successfully sent. Our team will contact you
+        shorty within an hour.
+      </p>
+      <div class="form-text-last">
+        <p class="form-text">Follow me via</p>
+        <a href="#"
+          ><svg class="icon-instagram" width="16" height="16">
+            <use href="/img/sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </div>
