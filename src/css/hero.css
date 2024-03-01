@@ -12,7 +12,7 @@
   left: 0px;
   color: #210803;
   text-transform: uppercase;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--secondary-font-family);
   font-size: 36px;
   line-height: 1;
 }
@@ -33,7 +33,7 @@
   padding: 17px 0;
   border: none;
 
-  background-color: #b31719;
+  background-color: var(--accent-color);
   color: #f6f5f1;
 
   font-size: 12px;

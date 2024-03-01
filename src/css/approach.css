@@ -5,8 +5,8 @@
 
 .approach-title {
   margin-bottom: 40px;
-  color: #b31719;
-  font-family: 'Helvetica Neue', sans-serif;
+  color: var(--accent-color);
+  /* font-family: 'Helvetica Neue', sans-serif; */
   font-size: 12px;
   font-weight: 400;
 }
@@ -20,14 +20,14 @@
 .approach-card-title {
   color: #2d1b0d;
   text-transform: uppercase;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--secondary-font-family);
   font-size: 36px;
   line-height: 1;
   margin-bottom: 16px;
 }
 
 .approach-text {
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
   font-size: 12px;
   line-height: 1.5;
   text-align: justify;

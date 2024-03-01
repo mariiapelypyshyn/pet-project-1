@@ -1,7 +1,7 @@
 .services-title {
-  color: #b31719;
+  color: var(--accent-color);
   text-transform: uppercase;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--secondary-font-family);
   font-size: 36px;
   line-height: 1;
   margin-bottom: 40px;
@@ -21,11 +21,11 @@
 .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
-  background-color: #b31719;
+  background-color: var(--accent-color);
 }
 .swiper-pagination-bullet-active {
   border-radius: 50px;
-  background-color: #b31719;
+  background-color: var(--accent-color);
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -44,7 +44,7 @@
 
 .services-img-title {
   text-transform: uppercase;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
   font-weight: 400;
   font-size: 12px;
   color: #210803;

@@ -13,7 +13,6 @@
 
 .is-open {
   transform: translateX(0);
-  /* cursor: none; */
 }
 
 .mobile-menu-button-close {
@@ -45,12 +44,12 @@
 
 .title-section-link {
   color: #8f7d65;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
 }
 
 .title-section-link:active,
 .title-section-link:visited {
-  color: #b31719;
+  color: var(--accent-color);
 }
 
 .title-section-icon-instagram {
@@ -58,5 +57,5 @@
 }
 
 .title-section-icon-instagram:active {
-  stroke: #b31719;
+  stroke: var(--accent-color);
 }

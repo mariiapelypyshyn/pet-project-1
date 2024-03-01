@@ -1,5 +1,6 @@
 .footer {
-  padding: 38px 16px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .footer-container {
@@ -10,12 +11,12 @@
 
 .icon-instagram-footer {
   display: block;
-  fill: #b31719;
+  fill: var(--accent-color);
 }
 
 .footer-copyright {
   display: block;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
   font-size: 10px;
   line-height: 1.5;
 }
