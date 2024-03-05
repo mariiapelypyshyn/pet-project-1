@@ -24,6 +24,7 @@
   color: #2d1b0d;
   text-transform: uppercase;
   font-family: var(--secondary-font-family);
+  font-weight: 300;
   font-size: 36px;
   line-height: 1;
   margin-bottom: 40px;
@@ -48,4 +49,58 @@
   background-color: transparent;
   border: 1px solid #2d1b0d;
   color: #210803;
+}
+
+/*Explore more content*/
+
+.blog-explore-more {
+  display: none;
+}
+
+.blog-more-text {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.explore-more-first-container {
+  margin-bottom: 32px;
+}
+
+.explore-more-img {
+  /* max-width: 375px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.explore-more-sub {
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.explore-more-artcl {
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2d1b0d;
+  margin-bottom: 24px;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.blog-more-text-lch {
+  margin-bottom: 32px;
+}
+
+.explore-more-btn-up {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn-up {
+  margin-bottom: 24px;
 }

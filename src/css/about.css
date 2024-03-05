@@ -29,7 +29,7 @@
   color: var(--accent-color);
   /* font-family: 'Helvetica Neue', sans-serif; */
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .about-text {
@@ -59,6 +59,7 @@
 .about-banner-title {
   color: #f6f5f1;
   font-family: var(--secondary-font-family);
+  font-weight: 300;
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;

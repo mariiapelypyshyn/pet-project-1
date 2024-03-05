@@ -21,6 +21,7 @@
   color: #2d1b0d;
   text-transform: uppercase;
   font-family: var(--secondary-font-family);
+  font-weight: 300;
   font-size: 36px;
   line-height: 1;
   margin-bottom: 16px;
