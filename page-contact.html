@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    
+    
+    <title>Page 2</title>
+    <script type="module" crossorigin src="/pet-project-1/assets/page-contact-03e19668.js"></script>
+    <link rel="modulepreload" crossorigin href="/pet-project-1/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="stylesheet" href="/pet-project-1/assets/page-contact-fd6eed07.css">
+    <link rel="stylesheet" href="/pet-project-1/assets/reset-caef46f6.css">
+    <link rel="stylesheet" href="/pet-project-1/assets/styles-5d46e7ee.css">
+  </head>
+  <body>
+    <header class="header container">
+      <p>Contact</p>
+    </header>
+    <section>
+      <img class="form-img" src="/pet-project-1/assets/form-77a9fde2.jpg" alt="woman" />
+      <div class="form-container">
+        <div class="container">
+          <p class="form-title">
+            To request a discovery call, book a session or get more details,
+            please contact via form bellow
+          </p>
+          <form class="form">
+            <label class="form-label" for="user_name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="user_name"
+              required
+              pattern="[A-Za-zА-Яа-яЁёІіЇїЄєґҐ\s-]+"
+              title="Please enter a valid name. Only letters and spaces are allowed."
+            />
+            <label class="form-label" for="user_phone">Phone</label>
+            <input class="form-input" type="tel" name="phone" id="user_phone" />
+            <label class="form-label" for="user_email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="user_email"
+              title="Please enter a valid email address"
+            />
+            <div class="drop-down-list-container">
+              <p class="form-label mrgn">You prefer we contact you via</p>
+              <svg class="icon-down" width="24" height="24">
+                <use href="/pet-project-1/assets/sprite-3817d766.svg#icon-down" />
+              </svg>
+            </div>
+            <div class="drop-down-list-container">
+              <p class="form-label mrgn">Services</p>
+              <svg width="24" height="24">
+                <use href="/pet-project-1/assets/sprite-3817d766.svg#icon-down" />
+              </svg>
+            </div>
+            <label class="form-label" for="user_comment">Comment</label>
+            <input
+              class="form-input input-comment"
+              type="text"
+              name="comment"
+              id="user_comment"
+            />
+            <p class="form-text">
+              For other inquiries or if preferred please contact directly via
+              email edna@shindinde.com
+            </p>
+            <div class="form-text-last">
+              <p class="form-text">Follow me via</p>
+              <a href="#"
+                ><svg class="icon-instagram" width="16" height="16">
+                  <use href="/pet-project-1/assets/sprite-3817d766.svg#icon-instagram" />
+                </svg>
+              </a>
+            </div>
+            <button class="form-button" type="submit" data-modal-open="modal3">
+              SEND A REQUEST
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Modal Window Sent a Request-->
+
+    <div class="is-hidden backdrop" data-modal="modal3">
+      <div class="sent-request-modal">
+        <div class="modal-container-hero">
+          <button
+            class="modal-close-btn"
+            type="button"
+            data-modal-close="modal3"
+          >
+            <svg class="modal-close-icon" width="32" height="32">
+              <use href="/pet-project-1/assets/sprite-3817d766.svg#icon-menu-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="sent-request-container">
+          <h2 class="modal-send-request-title">Thank you!</h2>
+          <p class="modal-send-request-text">
+            Your request has been successfully sent. Our team will contact you
+            shorty within an hour.
+          </p>
+          <div class="form-text-last">
+            <p class="form-text">Follow me via</p>
+            <a href="#"
+              ><svg class="icon-instagram" width="16" height="16">
+                <use href="/pet-project-1/assets/sprite-3817d766.svg#icon-instagram" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- <script type="module" src="./js/modal-backdrop.js"></script> -->
+  </body>
+</html>
