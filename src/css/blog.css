@@ -104,3 +104,7 @@
 .btn-up {
   margin-bottom: 24px;
 }
+
+.arrow-up {
+  fill: var(--accent-color);
+}
