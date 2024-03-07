@@ -16,6 +16,7 @@
 @import url('./footer.css');
 @import url('./header-menu.css');
 @import url('./modal-backdrop.css');
+@import url('./fashion-styling.css');
 
 :root {
   --secondary-font-family: 'Cormorant Garamond', serif;

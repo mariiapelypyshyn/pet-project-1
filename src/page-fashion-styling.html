@@ -7,10 +7,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -23,21 +28,66 @@
     <title>Fashion-styling</title>
   </head>
   <body>
-    <section class="fahion-styling">
+    <header class="header container">
+      <h2 class="fashion-title">FASHION STYLING</h2>
+      <button class="mobile-menu-button-close close-btn">
+        <svg class="mobile-menu-icon-close" width="32" height="32">
+          <use href="/img/sprite.svg#icon-menu-close" />
+        </svg>
+      </button>
+    </header>
+
+    <section class="fahion-styling container">
       <img src="./img/fashion-styling/fashion-styling.jpg" alt="laptop" />
-      <p>4h | in person</p>
-      <p>When time is short but the occasion is special</p>
-      <p>
-        Should you face a particular style quest with no energy to deal with it
-        singly – I’m there to support you. Whether you need: a special occasion
-        or a red carpet look a key speaker image for a business event a
-        preplanned vacation capsule a desired luxury item sourced and delivered
-        for a dear one or yourself personal brand or family photoshoot styling
-        With a custom solution to each request, I make sure you feel relaxed and
-        taken care of at all times. Tap for details and booking.
-      </p>
-      <button>DETAILS</button>
-      <button>TESTIMONIALS</button>
+      <div class="fashion-text-container">
+        <p class="fashion-text">4h | in person</p>
+        <p class="fashion-second-text">
+          When time is short but the occasion is special
+        </p>
+        <p class="fashion-text-more first-text">
+          Should you face a particular style quest with no energy to deal with
+          it singly – I’m there to support you. Whether you need:
+        </p>
+        <p class="fashion-text-more second-text">
+          - a special occasion or a red carpet look <br />
+          - a key speaker image for a business event <br />
+          - a preplanned vacation capsule <br />
+          - a desired luxury item sourced and delivered for a dear one or
+          yourself
+
+          <br />
+          - personal brand or family photoshoot styling
+        </p>
+        <p class="fashion-text-more third-text">
+          With a custom solution to each request, I make sure you feel relaxed
+          and taken care of at all times. Tap for details and booking.
+        </p>
+
+        <button class="fashion-btn details-btn">DETAILS</button>
+        <div class="details">
+          <p class="details-text">
+            5 hour of in person session <br />
+            Pre-selected wardrobe capsule <br />
+            Mindful and coordinated purchases <br />
+            Effectively invested budget
+          </p>
+          <p class="details-text details-text-next">
+            - You fill out a questionary, share your shopping goals & budget
+            <br />- I build a shopping strategy, pre-select and book the
+            clothing for the shopping day <br />
+            -We meet in person and follow the pre-planned shopping route <br />
+            - While shopping I teach you self styling techniques personalized
+            for your body lines and appearance <br />
+            - We finish with new purchases, all coordinated in a wardrobe
+            capsule according to your aesthetic, personality and lifestyle.
+          </p>
+          <p class="details-text details-text-next details-text-last">
+            For in person guided shopping experience in Milan, London or Paris,
+            please leave at though a Contact section.
+          </p>
+        </div>
+        <button class="fashion-btn testimonials-btn">TESTIMONIALS</button>
+      </div>
     </section>
     <section class="reviews container">
       <div class="swiper">
@@ -50,7 +100,7 @@
                 alt="portrait of a woman"
               />
               <div>
-                <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+                <h3 class="reviews-card-title card-title">Nadiya Maltseva</h3>
                 <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
               </div>
             </div>
@@ -76,7 +126,7 @@
                 alt="portrait of a woman"
               />
               <div>
-                <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+                <h3 class="reviews-card-title card-title">Nadiya Maltseva</h3>
                 <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
               </div>
             </div>
@@ -102,7 +152,7 @@
                 alt="portrait of a woman"
               />
               <div>
-                <h3 class="reviews-card-title">Nadiya Maltseva</h3>
+                <h3 class="reviews-card-title card-title">Nadiya Maltseva</h3>
                 <h4 class="reviews-card-suptitle">Maltseva Consulting</h4>
               </div>
             </div>
@@ -127,8 +177,164 @@
     <div class="hero-btn-container">
       <button class="hero-btn" data-modal-open="modal2">BOOK NOW</button>
     </div>
+
+    <!--Modal read more-->
+
+    <div class="backdrop is-hidden" data-modal="modal1">
+      <div class="read-more-modal">
+        <button class="modal-close-btn" type="button" data-modal-close="modal1">
+          <svg class="modal-close-icon" width="32" height="32">
+            <use href="/img/sprite.svg#icon-menu-close" />
+          </svg>
+        </button>
+        <div class="reviews-photo-text-container change-margin">
+          <img
+            class="reviews-photo"
+            src="/img/reviews/reviews.png"
+            alt="portrait of a woman"
+            width="56"
+            height="56"
+          />
+          <div>
+            <h3 class="reviews-card-title read-more-title">Nadiya Maltseva</h3>
+            <h4 class="reviews-card-suptitle read-more-suptitle">
+              Maltseva Consulting
+            </h4>
+          </div>
+        </div>
+        <p class="modal-text">
+          During a stage in my life, I needed to transition from my corporate
+          attire during work hours and floral dresses during leisure time, to a
+          more versatile and easy-to-wear style. Edna surprised me by first
+          wanting to understand me as a person, not just my daily role. As we
+          sorted through my closet, I was apprehensive about having to let go of
+          my favorite pieces. However, Edna approached each item with reverence
+          and asked about my personal connection and association with it. In the
+          end, we ended up donating 70% of the items and did a little shopping.
+          Edna goes beyond just putting together an outfit. She taught me to
+          view each item as an ingredient that can be used in various
+          combinations, making them incredibly satisfying and appealing,
+          resulting in compliments from others
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Window Book now -->
+
+    <div class="backdrop-booknow is-hidden backdrop" data-modal="modal2">
+      <div class="booknow-modal">
+        <div class="modal-container-hero">
+          <button
+            class="modal-close-btn"
+            type="button"
+            data-modal-close="modal2"
+          >
+            <svg class="modal-close-icon" width="32" height="32">
+              <use href="/img/sprite.svg#icon-menu-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="form-container hero-modal-form-container">
+          <p class="form-title">
+            To request a discovery call, book a session or get more details,
+            please contact via form bellow
+          </p>
+          <form class="form">
+            <label class="form-label" for="user_name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="user_name"
+              required
+              pattern="[A-Za-zА-Яа-яЁёІіЇїЄєґҐ\s-]+"
+              title="Please enter a valid name. Only letters and spaces are allowed."
+            />
+            <label class="form-label" for="user_phone">Phone</label>
+            <input class="form-input" type="tel" name="phone" id="user_phone" />
+            <label class="form-label" for="user_email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="user_email"
+              title="Please enter a valid email address"
+            />
+            <div class="drop-down-list-container">
+              <p class="form-label mrgn">You prefer we contact you via</p>
+              <svg class="icon-down" width="24" height="24">
+                <use href="/img/sprite.svg#icon-down" />
+              </svg>
+            </div>
+            <div class="drop-down-list-container">
+              <p class="form-label mrgn">Services</p>
+              <svg width="24" height="24">
+                <use href="/img/sprite.svg#icon-down" />
+              </svg>
+            </div>
+            <label class="form-label" for="user_comment">Comment</label>
+            <input
+              class="form-input input-comment"
+              type="text"
+              name="comment"
+              id="user_comment"
+            />
+            <p class="form-text">
+              For other inquiries or if preferred please contact directly via
+              email edna@shindinde.com
+            </p>
+            <div class="form-text-last">
+              <p class="form-text">Follow me via</p>
+              <a href="#"
+                ><svg class="icon-instagram" width="16" height="16">
+                  <use href="/img/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+            </div>
+            <button class="form-button" type="submit" data-modal-open="modal3">
+              SEND A REQUEST
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Window Sent a Request-->
+    <div class="is-hidden backdrop" data-modal="modal3">
+      <div class="sent-request-modal">
+        <div class="modal-container-hero">
+          <button
+            class="modal-close-btn"
+            type="button"
+            data-modal-close="modal3"
+          >
+            <svg class="modal-close-icon" width="32" height="32">
+              <use href="/img/sprite.svg#icon-menu-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="sent-request-container">
+          <h2 class="modal-send-request-title">Thank you!</h2>
+          <p class="modal-send-request-text">
+            Your request has been successfully sent. Our team will contact you
+            shorty within an hour.
+          </p>
+          <div class="form-text-last">
+            <p class="form-text">Follow me via</p>
+            <a href="#"
+              ><svg class="icon-instagram" width="16" height="16">
+                <use href="/img/sprite.svg#icon-instagram" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/reviews.js"></script>
     <script type="module" src="./js/modal-backdrop.js"></script>
+    <script type="module" src="./js/send-request-page.js"></script>
+    <script type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
