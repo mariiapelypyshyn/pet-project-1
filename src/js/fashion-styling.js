@@ -1,14 +1,15 @@
-const detailsBtn = document.querySelector('.details-btn');
+const detailsBtn = document.querySelector(".details-btn");
 console.log(detailsBtn);
 
-const testimonialsBtn = document.querySelector('.testimonials-btn');
-console.log(detailsBtn);
+const testimonialsBtn = document.querySelector(".testimonials-btn");
+console.log(testimonialsBtn);
 
-const detailsSection = document.querySelector('.details');
-const testimonialsSection = document.querySelector('.testimonials');
 
-// const detailsBtn = document.querySelector('.details-btn');
-// console.log(detailsBtn);
+const detailsSection = document.querySelector(".details");
+
+const testimonialsSection = document.querySelector(".testimonials");
+
+
 
 const handleClickDetails = () => {
     console.log('nhjbhvgghv')
@@ -29,6 +30,7 @@ const handleClickTestimonials = () => {
     else { testimonialsBtn.textContent = '+ TESTIMONIALS' };
 
 }
+
 
 
 detailsBtn.addEventListener('click', handleClickDetails);
