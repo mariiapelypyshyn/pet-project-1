@@ -46,3 +46,18 @@
 .swiper-nav {
   margin-bottom: 40px;
 }
+
+/*Testimonials-page*/
+
+.testimonials-page-title {
+  font-size: 12px;
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.reviews-page {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

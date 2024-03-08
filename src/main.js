@@ -6,3 +6,4 @@ import './js/modal-backdrop';
 import './js/mobile-menu';
 import './js/send-request';
 import './js/explore-more';
+import './js/fashion-styling';

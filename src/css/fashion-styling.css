@@ -82,10 +82,18 @@
   margin-bottom: 0px;
 }
 
-.reviews {
+.testimonials {
   display: none;
 }
 
 .details {
   display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.fashion-page-btn-container {
+  margin-bottom: 24px;
 }

@@ -27,7 +27,7 @@
 }
 
 .form-container {
-  padding: 32px 32px 64px 32px;
+  padding: 32px 16px 64px 16px;
 }
 
 .form-title {
@@ -58,6 +58,10 @@
   justify-content: space-between;
 }
 
+.hero-modal-form-container {
+  padding-top: 0;
+}
+
 .form-text {
   color: #210803;
   /* font-family: 'Helvetica Neue', sans-serif; */
@@ -69,10 +73,6 @@
 .form-text-last {
   display: flex;
   gap: 16px;
-}
-
-.hero-modal-form-container {
-  padding-top: 0;
 }
 
 .sent-request-modal {
@@ -111,4 +111,13 @@
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 24px;
+}
+
+/*Contact-page*/
+
+.contact-page-title {
+  font-size: 12px;
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 400;
 }
